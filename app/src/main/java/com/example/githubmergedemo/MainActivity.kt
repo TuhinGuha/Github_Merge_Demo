@@ -48,6 +48,13 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
+@Composable
+fun Greeting4(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello, This is Tuhin guha",
+        modifier = modifier
+    )
+}
 
 @Composable
 fun Greeting3(fullName: String, modifier: Modifier = Modifier) {
