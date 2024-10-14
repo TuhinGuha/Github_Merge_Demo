@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             GithubMergeDemoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
+                    Greeting2(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
@@ -34,6 +34,13 @@ class MainActivity : ComponentActivity() {
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello, This is Parijat Adhikary",
+        modifier = modifier
+    )
+}
+@Composable
+fun Greeting2(name: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello, This is Tuhin",
         modifier = modifier
     )
 }
