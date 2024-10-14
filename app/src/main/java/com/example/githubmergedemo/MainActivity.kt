@@ -24,6 +24,10 @@ class MainActivity : ComponentActivity() {
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
                     )
+                    Greeting3(
+                        fullName = "Android",
+                        modifier = Modifier.padding(innerPadding)
+                    )
                 }
             }
         }
@@ -44,6 +48,16 @@ fun Greeting2(name: String, modifier: Modifier = Modifier) {
         modifier = modifier
     )
 }
+
+@Composable
+fun Greeting3(fullName: String, modifier: Modifier = Modifier) {
+    Text(
+        text = "Hello, This is My full name",
+        modifier = modifier
+    )
+}
+
+
 
 @Preview(showBackground = true)
 @Composable
